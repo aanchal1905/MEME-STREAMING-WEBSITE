@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>MEME STREAM</title>
+		<style>
+			body {
+				width:70%;	
+				position: fixed;
+				margin-left: 400px;
+				font-size:25px;
+				font-family:'Calibri';
+			}
+
+			input[type=text], select, textarea {
+  				width: 60%;
+  				padding: 12px;
+  				border: 1px solid black;
+  				border-radius: 10px;
+  				box-sizing: border-box;
+  				resize: vertical;
+			}
+
+			input[type=submit] {
+  				background-color: #2832C2;
+  				color: white;
+  				width:15%;
+  				margin-top:0px;
+   				padding: 12px 12px;
+  				border: 1px solid black;
+  				border-radius: 5px;
+  				cursor: pointer;
+			}
+
+			input[type=url] {
+				background-color:white;
+				width:45%;
+				padding: 12px;
+  				border: 1px solid black;
+  				border-radius: 10px;
+  				box-sizing: border-box;
+  				resize: vertical;
+			}
+
+			input[type=submit]:hover {
+  				background-color:#151E3D;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Meme Stream</h1>
+		<form action="1.php" method="post" target="_blank">
+
+    		<label class='required' for="name">Meme Owner:</label><br>
+    		<input type="text" id="name" name="name" placeholder="Enter your Full Name:"><br><br>
+
+    		<label class='required' for="caption">Caption</label><br>
+    		<input type="text" id="caption" name="caption" placeholder="Be creative with your caption"><br><br>
+
+		    <label class='required' for="url" style="">URL Meme:</label><br>
+    		<input type="url" id="url" name="url" placeholder="Enter URL of your meme here">
+
+    		<input type="submit" value="Submit Meme"><br><br>
+
+  		</form>
+	</body>
+</html>
